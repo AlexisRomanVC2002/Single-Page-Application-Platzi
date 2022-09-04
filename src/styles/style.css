@@ -150,4 +150,9 @@ body {
     #Info{
         width: 100%;
     }
+
+    /*Error404*/
+    .Error404 a{
+        width: 50%;
+    }
 }
