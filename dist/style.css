@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e3e3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background-color: #d3cece;
+    padding: 20px;
+}
+
+.Header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-main a{
+    text-decoration: none;
+    color: #464343
+}
+
+#content{
+    padding: 20px;
+}
+
+/*Cards Characters*/
+.Characters{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(350px, 1fr)
+    );
+    gap: 20px;
+    align-items: center;
+}
+
+.Character-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: ease all 0.3s;
+    border-radius: 20px;
+}
+
+.Character-item a{
+    text-decoration: none;
+    color: #464343
+}
+
+.Character-item:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Character-item:hover a{
+    color: #fff;
+}
+
+/*Card Inner*/
+.Characters-inner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Character-card{
+    color: #464343;
+}
+
+.Characters-inner .Info{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    line-height: 50px;
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Characters-inner .Info h3{
+    font-weight: inherit;
+}
+
+.Characters-inner .Image-name > h2{
+    text-align: center;
+    background-color: #fff;
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Error 404*/
+.Error404{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Error404 a{
+    text-decoration: none;
+    background-color: #464343;
+    padding: 20px;
+    width: 20%;
+    border-radius: 20px;
+    color: #fff;
+    transition: all ease 0.3s;
+}
+
+.Error404 a:hover{
+    background-color: #646161;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 388px){
+    .Character-item img{
+        width: 200px;
+    }
+
+    .Characters{
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+    }
+}
